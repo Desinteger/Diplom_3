@@ -15,16 +15,15 @@ public class ConstructorTest extends BaseTest {
         MainPage objMainPage = new MainPage(getDriver());
         objMainPage.clickFillingsSection();
         objMainPage.clickBunsSection();
-        assertTrue(objMainPage.isFluorescentBunTitleDisplayed());
+        assertTrue(objMainPage.isBunTabSelected());
     }
-
 
     @DisplayName("Тест перехода к разделу 'Соусы'")
     @Test
     public void testScrollToSauceSection(){
         MainPage objMainPage = new MainPage(getDriver());
         objMainPage.clickSaucesSection();
-        assertTrue(objMainPage.isSauceSpicyXTitleDisplayed());
+        assertTrue(objMainPage.isSauceTabSelected());
     }
 
     @DisplayName("Тест перехода к разделу 'Начинки'")
@@ -32,6 +31,6 @@ public class ConstructorTest extends BaseTest {
     public void testScrollToFillingsSection(){
         MainPage objMainPage = new MainPage(getDriver());
         objMainPage.clickFillingsSection();
-        assertTrue(objMainPage.isBeefMeteoriteTitleDisplayed());
+        assertTrue(objMainPage.isFillingTabSelected());
     }
 }
